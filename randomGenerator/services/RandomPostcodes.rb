@@ -24,11 +24,11 @@ class RandomPostcodes
 
 end
 
-rand = RandomPostcodes.new 
-# #prints 10 random postcodes
-result = rand.random_array(10)
-# #prints random postcodes between a range from 2 to 10
-result = rand.random_array(rand(2..10))
-p result.length
-p result
+# rand = RandomPostcodes.new 
+# # #prints 10 random postcodes
+# result = rand.random_array(10)
+# # #prints random postcodes between a range from 2 to 10
+# result = rand.random_array(rand(2..10))
+# p result.length
+# p result
 
