@@ -32,4 +32,4 @@
 ### Learning points
 1. Setting up the file structure
 2. Testing the random postcode generator using unit test
-3. practicing api OOP
+3. practicing api calling, rspec and OOP
