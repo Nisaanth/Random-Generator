@@ -25,11 +25,54 @@
 5. Go to that directory
 6. Open file
 
-## How to use 
-1. To create an object to use a method you create an instance variable like:
-    test = Generator.new
-    p test.random_array
-2. This will print out the object with the chosen method
+## How to Use Generator Method
+1. Copy lib file and insert folder within your project
+2. Require relative to the Generator class file 
+3. To create the object to use, instanciate the generator
+```ruby
+test = Generator.new
+```
+4. After instanciating the postcodes on the generator into a new variable 
+
+```ruby
+test.postcodes
+```
+
+5. For example execute the postcode methods using
+
+```ruby
+test.random_array(random_int_value)
+```
+6. This will create an array populated with an array of postcodes with random_int_value being the interger of your choice 
+or for a random number:
+
+```ruby
+rand(1..10)
+```
+This will give you any number between 1 to 10
+
+
+### How to test the code
+
+In the terminal run 
+
+```
+rspec --init
+```
+
+then in the spec_helper.rb file put 
+```
+require 'rspec'
+
+RSpec.configure do |config|
+  config.formatter = :documentation
+end
+```
+
+along with the necessary 'require_relative' paths
+
+
+then run rspec
 
 ### Challenges 
 1. thinking of creating different tests
